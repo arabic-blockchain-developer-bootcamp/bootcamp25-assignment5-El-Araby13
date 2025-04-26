@@ -12,14 +12,14 @@ contract Assignment5 {
     struct User {
     uint id; 
     string name; 
-}
+    }
     // 5. Create a public array of `User` called `users`
     User[] public users; 
 
     // Constructor
     // Initialize `isActive` to true
     constructor() {
-    isActive = true; 
+        isActive = true; 
     }
 
     // Function to increment the counter
@@ -33,9 +33,9 @@ contract Assignment5 {
     function toggleActive() public {
         if (isActive) {
             isActive = false;
-           } else {
+            } else {
             isActive = true;
-        }
+            }
     }
 
     // Function to add a user
@@ -55,5 +55,5 @@ contract Assignment5 {
     // Function to get the total number of users
     function getUserCount() public view returns (uint) {
         returns users.length;
+        }
     }
-}
